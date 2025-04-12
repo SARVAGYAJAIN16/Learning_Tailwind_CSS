@@ -1,0 +1,26 @@
+Understand about syntax and how to write in tailwind css.
+--> 
+Tailwind CSS is a utility-first CSS framework for designing websites by using its utility-first pre-defined classes. It is a low-level CSS framework 
+that is easy to learn and maintain in your projects. Tailwind CSS has many built-in features and classes that can be directly used on HTML documents.
+tailwind CSS is a CSS framework that offers many advantages to creating a responsive and SEO-friendly website in this fast-paced development phase.
+                                        <!-- Chapter 1  -->
+
+<h1 class= "text-center text-lg text-blue-400 mt-5">Hii this is tailwind play</h1>    
+ 
+<!-- mt is margin top  -->
+
+<div class="bg-violet-200 h-10 w-full border-2 border-violet-600 rounded-md my-4 p-2  flex justify-center items-center">
+
+  <!-- h is height , w is width , 200 is here shade , p is padding, my is margin of y, md is medium border  -->
+
+  <!-- md applies a medium border radius to make the corner rounded.....  and margin y (my) is it applies margin like left,right so on , so you can use y for top and bottom and x for left and right  -->
+
+  <h1 class = "text-center font-mono font-extrabold">Hello Learner</h1>
+
+<!-- margin->  is an external spacing pushes the elemrnt away  from other
+padding  -> is  internal spacing it sapce inside of an element.
+ -->
+
+ <!-- flex for making in center.. .. uses with his properties  .
+</div>
+
