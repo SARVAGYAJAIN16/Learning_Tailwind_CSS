@@ -1,0 +1,54 @@
+Understand about jit compiler and display and layout in tailwind CSS
+                                            
+                                            <!-- chapter 2  -->
+                             <!-- Just-in- time- compiler (JIT)-->
+
+In Tailwind CSS, JIT mode takes a similar approach by dynamically generating styles when they are needed rather than generating all possible styles at build time. 
+The JIT mode in TailwindCSS works by parsing your templates on-demand to find the utilities you use. Then it generates the corresponding CSS directly
+<h1 class = "text-center font-mono font-extrabold text-[30px]">Hello again</h1>
+<!-- dynamic value can give inside square bracket in jit compiler --
+
+                                                        Layout and flex box
+                                                        
+Most of the time you using  display , position , overflow
+1 position :-  positioning define where an element appears relative to its container or the viewport there is a position  of  relative which moves the element to its normal position.
+Ex  there are three box (indivual) so we are at middle one so it can move just some left and or some right.
+	absolute :- which moves it to the nearest parent.
+	Fixed -  position which sticks the element to the viewport so it does not scroll.
+Ex  top-0 so it fixed above 
+.2 Display :-
+Flexbox is important – flexbox in tailwind it dertermine how an element  behaves in term of layout  and visibility within the document . it help to create responsive layouts.
+Two important display properties are 
+1 flex  (which enables flexbox )
+2 grid  ( which enable css grid properties)
+Flexbox ---------
+
+<div class = " flex justify-end space-x-6 mt-3">
+  <!-- x-6 which will add some spacing in between the element -->
+  <!-- justify or align the container to the right -->
+  <div class= "h-16 w-16 rounded-full bg-blue-500"></div>
+  <div class= "h-16 w-16 rounded-full bg-orange-500"></div>
+  <div class= "h-16 w-16 rounded-full bg-yellow-500"></div>
+  <!-- h is height -->
+  <!-- rounded full to make into a circle -->
+  </div>
+ <!--  this three circles are in same line but we want in column so
+  you can do flex-col -->
+
+  <div class = " flex  flex-col items-center justify-center space-y-6 mt-3">
+  <div class= "h-16 w-16 rounded-full bg-blue-500"></div>
+  <div class= "h-16 w-16 rounded-full bg-orange-500"></div>
+  <div class= "h-16 w-16 rounded-full bg-yellow-500"></div>
+  <!--  y is vertical space here -->
+  </div>
+
+2:  grid:-  Then  apply  grid … it help to fill space automatically in content.
+<!--  grid  -->
+<div class = "grid grid-cols-3 gap-2 mt-2 mx-2">
+ <div class= "h-16  rounded-full bg-blue-500"></div>
+  <div class= "h-16  rounded-full bg-orange-500"></div>
+  <div class= "h-16  rounded-full bg-yellow-500"></div>
+</div>
+
+
+ 
