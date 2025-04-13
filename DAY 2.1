@@ -1,0 +1,37 @@
+Understand about media queries..
+                                
+                                  Chapter -3 Media Queries and responsive design.
+                                  
+By default its setting based for  mobile . because tailwind is mobile first .
+minwidth  queries will be applied by default.
+
+Note :- 
+Don’t use  ‘sm: ’ to target mobile devices.
+Use unprefixed utilities to target mobile and override them at larger breakpoints.
+
+code:-------------------------------------------------------------------------------
+<div class ="md:block hidden">
+  <!--  outer div class of medium devices.(md), block hidden means  is that we will apply display of none but only on medium devices where media width 
+  is greater than  or equal to 48 rem which is about 770 pix then we change display to block  so (if i expand it over 768 pix so it will appear in right of the screen..
+  ( till 768px  it is hidden then it will be visible. ) -->
+  <!--  so these two characters in a colon right(md:) here  are called a  media query. -->
+  <!--  Media Queries allow you to change CSS properties depending on the screen width  -->
+  <p class = "text"> I appear on screen 1 </p>
+</div>
+
+<!-- Using media queries you can change whatever you want let make always visible  but change the text background color depending on different screen sizes  -->
+<div class= "sm:bg-amber-500 md:bg-amber-700"> 
+  <p class= " text-white"> I appear again 2 </p>
+</div>
+  <!--  sm is small medium  then changes to medium ( it happen that full screen it is showing color 0f 500 wala then came to 768 pix so color change to 700 wala.) -->
+<!--  so summary is that is that larger screen  sizes will always override the smaller  ones ( here medium is being applied beacuse it is greater than 48 rem. ) -->
+
+<!--  using Max md -->
+<div class= "max-sm:bg-amber-500 max-md:bg-amber-700"> 
+  <!--  it will be applying that only if the width is lower than that specific size -->
+  <p class= " text-white"> I appear again 3 </p>
+  <!--  after 768px  it will disappear --> 
+  <!-- and here we flip the color (700 WALA is showing on full screen) -->
+</div>
+
+ 
