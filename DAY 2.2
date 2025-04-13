@@ -1,0 +1,56 @@
+Understand about custom styles , reusability and direactive....
+                               Custom styles & Reusability 
+<!--  let say you want new color and it is not prsent in default css tailwind.  so we can do with differrnt  methods  -->
+<!-- 1  Inline -->
+<!--  whatever the value is put inside square bracket -->
+<p class="text-[#e01c4d] bg-[#1dd836] p-2">Chestnutcolor</p>
+<!--  like this you can use for any utility class -->
+
+<p class= "p-[16px] text-[30px] text-[#23df78]
+           bg-[#a6ddbf]">More text more fun</p>
+ <!-- It have disadvantage is it is for small task. it does not make sence to provide custom values for every single piece of text -->
+
+ <!--  to solve this we have  config it will enable you to control and organize the entire visual style of your application. 
+ so use tailwind CSS directives  to write any config you want. this is the biggest changes came in tailwind css so it configuring your project
+ in a javascript file  and allow you to configure it directly within css.  -->
+
+ <!--  so we do inside @theme
+    for ex add above chestnut color by saying (dash dash) --color-chestnut  -->
+ <!--  2 Config -->
+
+<p class= "p-[16px] text-[30px] text-chestnut
+<!--  calling chestnut from css file -->
+           bg-[#40e98c]">More colors here</p>
+
+<!-- Tailwind css offer directives for each of these to define  specific styles .. Base , component and utilities are part of an approch to structuring
+and organizing styles using the configuration file method    -->
+
+<!-- 1  base  -->
+<!--  base simply applies styles globally across your project for your element like  h1 or p tags -->
+
+<!--  syntax -->
+<!--  @layer base{
+       h1{
+         font-size: var(--text-2X1);
+       }
+       h2{
+         font-size: var(--text-X1);
+       }
+} -->
+
+<!-- 2 components -->
+<!--  is used to style specific component or reusable UI element like cards Footers and more -->
+
+<!--  3 utilities -->
+<!-- which are Atomic styles for individual properties like margin, paddings, typography color and more -->
+
+<!--  we have another Directive called @apply -->
+<!--  that inserts tailwind css styles into css -->
+
+<!--  @layer -->
+<!-- using these we can create custom styles for base component and utilities ( see code in css file ) -->
+
+<!--  @layer base (layer of base) -->
+<!-- it allow you to automatically target specific element  like h1  -->
+
+
